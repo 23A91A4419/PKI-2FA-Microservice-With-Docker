@@ -1,5 +1,13 @@
-data/seed.txt
-*.txt
+# Encrypted seed (DO NOT COMMIT)
+encrypted_seed.txt
+
+# Python cache
 __pycache__/
 *.pyc
-*.log
+
+# Environment files
+.env
+
+# IDE files
+.vscode/
+.idea/
