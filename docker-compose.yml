@@ -13,7 +13,7 @@ services:
       - seed-data:/data
       - cron-output:/cron
       - ./student_private.pem:/app/student_private.pem:ro
-      - ./student_public.pem:/app/student_public.pem:ro
+      - ./student_public_key.pem:/app/student_public_key.pem:ro
       - ./instructor_public.pem:/app/instructor_public.pem:ro
 
     # Environment variables
