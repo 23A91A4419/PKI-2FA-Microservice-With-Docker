@@ -51,6 +51,7 @@ Scheduling: cron (inside container)
 Persistence: Docker volumes
 
 🔐 Cryptography Details
+
 RSA Key Pair
 
 Key Size: 4096 bits
@@ -68,6 +69,7 @@ Commit Signing: RSA-PSS (SHA-256, max salt length)
 Signature Encryption: RSA-OAEP (SHA-256)
 
 🔁 API Endpoints
+
 1️⃣ Decrypt Seed
 
 POST /decrypt-seed
