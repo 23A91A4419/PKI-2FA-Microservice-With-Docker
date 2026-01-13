@@ -6,3 +6,4 @@ __pycache__/
 encrypted_seed.txt
 data/
 cron/last_code.txt
+
