@@ -1,0 +1,22 @@
+services:
+  app:
+    build: .
+    container_name: pki-2fa-service
+    ports:
+      - "8080:8080"
+    volumes:
+      - seed-data:/data
+      - cron-output:/cron
+      # Mount keys for local testing
+      - ./student_private.pem:/app/student_private.pem:ro
+      - ./student_public.pem:/app/student_public.pem:ro
+      # Instructor key will be created later, but we can mount it if exists
+      - ./instructor_public.pem:/app/instructor_public.pem:ro
+    environment:
+      - TZ=UTC
+      - DATA_DIR=/data
+    restart: unless-stopped
+
+volumes:
+  seed-data:
+  cron-output:
