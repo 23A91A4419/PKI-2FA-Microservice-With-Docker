@@ -15,3 +15,4 @@ class Settings:
     PRIVATE_KEY_PATH = os.getenv("PRIVATE_KEY_PATH", os.path.join(BASE_DIR, "student_private.pem"))
 
 settings = Settings()
+
